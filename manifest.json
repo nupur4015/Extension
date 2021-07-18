@@ -5,6 +5,12 @@
     "chrome_url_overrides": {
         "newtab":"index.html"
     },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+      },
+    "permissions": ["tabs","webRequest","webRequestBlocking", "https://*/*"],
+    
     "content_security_policy": "script-src 'self' https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js; object-src 'self'",
     "content_scripts": [
         {

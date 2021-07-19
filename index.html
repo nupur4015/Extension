@@ -13,12 +13,16 @@
             <div class="row justify-content-center">
                 <div class="col-4 text-center">
             <div>
+                <h4 id="wb"></h4>
                 <h1 class="display-3" id="timeleft">0</h1>
                 <h4 >minutes left</h4>
                 <button class="btn btn-outline-dark mb-3" id="reset"><i class="bi bi-arrow-counterclockwise"></i></button>
                 <button class="btn btn-outline-dark mb-3" id="pause"><i class="bi bi-pause"></i></button>
                 <button class="btn btn-outline-dark mb-3" id="switch"><i class="bi bi-arrow-left-right"></i></button>
                 <br>
+                <audio controls id="music" style="display:none">
+                    <source src="Alarm.mp3" type="audio/mpeg">
+                </audio>
              </div>
              
         <div class="accordion accordion-align-center" id="choice">
